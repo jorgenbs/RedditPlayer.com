@@ -1,0 +1,2 @@
+Configure the path to proxy.php in the loadSubReddit() function in js/site.js.
+The proxy.php is needed due to cross script restrictions in loading the xml feed.

@@ -1,0 +1,154 @@
+html {	
+	height: 100%;
+}
+body  
+{
+	background-image: url("../img/texture_dark1.jpg");
+	background-repeat: repeat;
+	background-color: #CCCCCC;
+	padding-top: 2em;
+}
+
+a:link, a:visited {
+	color: #1C94C4;
+}
+
+#mainContainer 
+{
+	overflow: auto;
+	padding: 1em;
+	background-color: #FFFFFF
+}
+
+#col1 
+{
+	float: left;
+	width: 70%;
+}
+
+#col2 
+{
+	float: left;
+	width: 30%;
+}
+
+#col2 h1 
+{
+	font-family: 'Comfortaa', cursive;
+	font-size: 24px;
+	color: #330000;
+	text-align: center;
+	text-align: -webkit-center;
+	padding-bottom: 11px;
+	margin-top: 25px;
+}
+
+#feedTabs .ui-widget-header
+{
+	background: url(../img/glossheader.png) 50% 50% repeat-x;
+	border: 1px solid #CCC;
+}
+#container 
+{
+	margin: 0px;
+	padding: 0px;
+}
+#controller 
+{
+	height: 39px;
+	margin: 0;
+	float: left;
+}
+#add_tab .ui-button-text { padding: 3px 7px 3px 7px }
+#controllerToolbar
+{
+	/*padding: 20px 4px 20px 4px;*/
+	/*width: 400px;*/s
+	/*margin: 15px;*/
+	float: left;
+}
+#controllerBar .ui-widget-header { background-image: url("../img/pbar-ani.gif"); }
+#controllerBar 
+{
+	margin: 14px 0px 14px 0px;
+	float: left;
+	width: 200px;
+}
+#controllerTimer {
+	float: left;
+	cursor: none;
+	width: 70px;
+	border: none;
+	padding: 7px;
+	background: none;
+}
+#controllerStatus .ui-button-text 
+{
+	text-overflow: ellipsis;
+	overflow: hidden;
+	white-space: nowrap;
+}
+#credits 
+{
+	color: white;
+	text-align: center;
+	font-size: 0.7em;
+}
+#controllerFloat 
+{
+	white-space: nowrap;
+	overflow: hidden;
+}
+#clear_playlist { width: 100% }
+#togglePlayer { width: 100% }
+#goToYouTube { width: 100% }
+#loginWithYouTube { width: 100% }
+#addToFavourites { width: 100% }
+#revokeToken { width: 100% }
+#togglePlayer .ui-button-text { padding: 0; }
+#controllerTimer .ui-button-text { padding: 0; }
+#playlist .ui-selecting { background: #FECA40; }
+#playlist .ui-selected { background: #F39814; color: white; }
+#playlist { list-style-type: none; margin: 0; padding: 0; width: 100%; cursor: pointer; }
+#playlist li  
+{
+	margin: 3px; 
+	padding: 0.4em; 
+	font-size: 1em; 
+	height: 18px; 
+	text-overflow: ellipsis; 
+	overflow: hidden; 
+	/*white-space: nowrap;*/
+}
+
+
+#dialog label { margin-top: 0.5em; }
+#tab_title { width: 100%; }
+#feedTabs { margin-top: 1em; }
+#feedTabs li .ui-icon-close { float: left; margin: 0.4em 0.2em 0 0; cursor: pointer; }
+#add_tab { cursor: pointer; }
+
+#feed .ui-selecting { background: #FECA40; }
+#feed .ui-selected { background: #F39814; color: white; }
+#feed { list-style-type: none; margin: 0; padding: 0; cursor: pointer; }
+#feed li  
+{
+	margin: 3px; 
+	padding: 0.4em; 
+	font-size: 1em; 
+	height: 18px; 
+	text-overflow: ellipsis; 
+	overflow: hidden; 
+	white-space: nowrap;
+}
+
+.ui-button .ui-icon.youtube {
+    background-image: url(../img/youtube-icon.png);
+	width: 16px;
+	height: 16px;
+}
+.ui-button .ui-icon.youtube-star {
+    background-image: url(../img/youtube-icon-star.png);
+	width: 16px;
+	height: 16px;
+}
