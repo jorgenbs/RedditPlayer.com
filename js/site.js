@@ -198,9 +198,20 @@ function onYTError(error) {
 
 function getYouTubeVideoID(item) {
 	if (item.type != "youtube") return false;
-	var a = item.url.indexOf("watch?v=") + 8;
-	var b = item.url.indexOf("&", a);
-	return b != -1 ? item.url.substring(a, b) : item.url.substring(a);
+	if (item.url.indexOf("watch?v=") > 0) {
+		var a = item.url.indexOf("watch?v=") + 8;
+		var b = item.url.indexOf("&", a);
+	}
+	else if (item.url.indexOf("watch?feature") > 0) {
+		var a = item.url.indexOf("v=",item.url.indexOf("watch?feature")) + 2;
+		var b = item.url.indexOf("&",a);
+	}
+	else if (item.url.indexOf(".com/v/") > 0) {
+		var a = item.url.indexOf("/v/") + 3;
+		var b = -1;
+	}
+	var yId = b != -1 ? item.url.substring(a, b) : item.url.substring(a);
+	return yId.indexOf("#") == -1 ? yId : yId.substring(0,yId.indexOf("#"));
 }
 
 
